@@ -1,0 +1,49 @@
+/* Container for the entire movie list */
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: #121212; /* Dark background for Netflix-like feel */
+}
+
+/* Individual movie card */
+.movie-card {
+    background-color: #1e1e1e; /* Slightly lighter shade for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Movie image */
+.movie-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Movie title */
+.movie-card h1 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+/* Movie language and cost */
+.movie-card h2 {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 5px 0;
+}
