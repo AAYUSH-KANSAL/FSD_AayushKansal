@@ -1,0 +1,73 @@
+ /* App.css */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.count-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  background-color: #f7f9fc;
+  font-family: Arial, sans-serif;
+}
+
+.count-display {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #eef3f7;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.count-display__heading {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.count-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.count-btn {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px; /* Fixed width for alignment */
+  text-align: center;
+}
+
+.count-btn:hover {
+  background-color: #45a049;
+}
+
+.count-btn:active {
+  background-color: #3e8e41;
+}
+
+.reset-btn {
+  background-color: #f44336;
+}
+
+.reset-btn:hover {
+  background-color: #e53935;
+}
+
+.reset-btn:active {
+  background-color: #c62828;
+}
