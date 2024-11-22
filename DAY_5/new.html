@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Link Example</title>
+</head>
+<body>
+    <!-- Initial hyperlink to Google -->
+    <a href="https://www.google.com" target="_blank" id="myLink">Go to Google</a>
+    <br><br>
+    <!-- Button to change the hyperlink -->
+    <button id="changeLinkButton">Change Link</button>
+
+    <script>
+        // Select the hyperlink and button using querySelector
+        let link = document.querySelector('#myLink');
+        let button = document.querySelector('#changeLinkButton');
+
+        // Arrow function to toggle between Google and AKTU link
+        button.addEventListener('click', () => {
+            if (link.getAttribute('href') === 'https://www.google.com') {
+                link.setAttribute('href', 'https://aktu.ac.in');
+                link.innerText = 'Go to AKTU'; // Change displayed text
+            } else {
+                link.setAttribute('href', 'https://www.google.com');
+                link.innerText = 'Go to Google'; // Revert back to Google
+            }
+        });
+    </script>
+</body>
+</html>

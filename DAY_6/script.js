@@ -72,6 +72,7 @@ console.log("start");
 // }, 3000);
 
 // const myPromise = new Promise((resolve, reject) => {
+  
 //     let success = true; 
   
 //     if (success) {

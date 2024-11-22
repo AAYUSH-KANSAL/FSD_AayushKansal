@@ -6,7 +6,7 @@
 }
 .gridcontainer{
     display: grid;
-    grid-template-columns:auto auto auto  ;
+    grid-template-columns:20% 50% 30% ;
     background-color: antiquewhite;
 
 }

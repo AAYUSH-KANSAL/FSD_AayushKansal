@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
 </head>
 <body>
-    
+    <!-- <button onmouseover="display()">Click here</button>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+
+    <script>
+        let p1 = document.querySelectorAll('p');
+
+        let display = () => {
+            p1.forEach(p => {
+                p.innerHTML = "updated"; // Change innerHTML
+                p.style.backgroundColor = "green"; // Change background color to green
+            });
+        }
+    </script> -->
+
+   
+
+ <!-- Button to display the dynamic heading -->
+ <button id="showHeadingButton">Click to display heading</button>
+
+ <!-- Empty div where the dynamic heading will appear -->
+ <div id="headingContainer"></div>
+
+ <script>
+     // Select the button using querySelector
+     let button = document.querySelector('#showHeadingButton');
+
+     // Add an event listener for the button click
+     button.addEventListener('click', () => {
+         // Create a new div element
+         let newDiv = document.createElement('div');
+
+         // Set the inner content of the div as an H1-like heading using textContent
+         newDiv.textContent = 'This is a dynamic heading!';
+
+         // Style the text to look like an H1 (optional)
+         newDiv.style.fontSize = '2em';
+         newDiv.style.fontWeight = 'bold';
+         newDiv.style.color = 'blue';  // Optional: Change the text color
+
+         // Select the container where the div will be appended
+         let container = document.querySelector('#headingContainer');
+
+         // Append the newly created div to the container
+         container.appendChild(newDiv);
+     });
+ </script>
+
+       
 </body>
 </html>
