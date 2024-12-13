@@ -1,46 +1,27 @@
  /* MainLayout.css */
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #f7f9fc;
-    color: #333;
-  }
-  
-  nav {
-    background-color: #343a40;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    padding: 10px 15px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    background-color: #007bff;
-  }
-  
-  .outlet-container {
-    padding: 20px;
-  }
-  
+
+.navbar {
+  margin: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 10px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: brown;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 10%;
+}
+
+.nav-links a:hover {
+  background-color: #f0f0f0;
+}
