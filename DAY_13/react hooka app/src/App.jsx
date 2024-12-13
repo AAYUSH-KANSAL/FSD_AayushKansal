@@ -1,31 +1,30 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/MainLayout';
-import Login from './components/Login';
-import Register from './components/Register';
-import DashBoard from './components/DashBoard';
-import Logout from './components/Logout';
+import MainLayout from './component/MainLayout';
+import Register from './component/Register';
+import Login from './component/Login';
+import DashBoard from './component/DashBoard';
+import Logout from './component/Logout';
+import { useState } from 'react';
 
 const App = () => {
-  const [data, setData] = useState(null); // Initialize with null or an empty object
-
+  const [data,setData]=useState();
   return (
     <div>
-      {/* Optionally, you can display the user data */}
-      <div>{data ? JSON.stringify(data) : 'No user logged in'}</div>
-
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<MainLayout />}>
-            <Route path="login" element={<Login regLogin={setData} />} />
-            <Route path="register" element={<Register regData={setData} />} />
+            <Route path="/login" element={<Login regLogin={data} />} />
+            <Route path="/register" element={<Register regData={setData} />} />
           </Route>
-          <Route path="/dashboard" element={<DashBoard />} />
-          <Route path="/logout" element={<Logout />} />
+          <Route path="/dashboard" element={<DashBoard regDash={data}/>}/>
+          <Route path="/logout" element={<Logout/>}/>
         </Routes>
       </BrowserRouter>
-    </div>
-  );
-};
 
-export default App;
+    </div>
+  )
+}
+
+
+export default App
